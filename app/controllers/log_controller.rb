@@ -1,10 +1,12 @@
 class LogController < ApplicationController
   before_action :find_log, only: [:show, :edit, :update, :destroy]
+
   def index
+    @logs = Log.all
   end
 
   def show
-
+    @log = Log.find(params[:id])
   end
 
   def new
@@ -14,7 +16,7 @@ class LogController < ApplicationController
   def create
     @log = Log.new(log_params)
     if @log.save
-      redirect_to @log
+      redirect_to :action => :index #redirect_to @log wasn't working
     else
       render 'new'
     end
