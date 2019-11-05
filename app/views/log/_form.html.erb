@@ -1,6 +1,6 @@
-<%= bootstrap_form_with(controller: @log, local: true) do |f| %>
-    <%= f.date_field :date %>
-    <%= f.text_field :book %>
-    <%= f.text_field :minutes %>
-    <%= f.submit %>
+<%= simple_form_for @log do |f| %>
+    <%= f.input :date %>
+    <%= f.input :book %>
+    <%= f.input :minutes %>
+    <%= f.button :submit %>
 <% end %>

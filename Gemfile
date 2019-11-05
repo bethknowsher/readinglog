@@ -10,7 +10,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-
 gem 'rspec', '~> 3.8'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'sass-rails', '~> 6.0'
@@ -18,6 +17,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'devise'
 gem 'bootstrap_form'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'simple_form', '~> 4.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

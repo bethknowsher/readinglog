@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root to: 'log#index'
+
   devise_for :users, :controllers => {:registrations => "registrations"}
 
   devise_scope :user do
@@ -8,8 +11,5 @@ end
 devise_scope :user do
   get 'signup', to: 'devise/registrations#new'
 end
-
-resources :log
-root to: 'log#index'
 
 end

@@ -16,7 +16,7 @@ class LogController < ApplicationController
   def create
     @log = Log.new(log_params)
     if @log.save
-      redirect_to :action => :index #redirect_to @log wasn't working
+      redirect_to @log
     else
       render 'new'
     end
